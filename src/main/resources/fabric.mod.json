@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "nilsensbaking",
+	"version": "0.1",
+	"name": "Nilsens Exquisite Baking Equipment",
+	"description": "Bake delicious cupcakes, cakes, breads and pastries with this simple mod adding bowls and batter to the minecraft experience!",
+	"authors": [
+		"Nilsen"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/nilsensbaking/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.nilsen.nilsensbaking.NilsensExquisiteBakingEquipment"
+		],
+		"fabric-datagen": [
+			"net.nilsen.nilsensbaking.NilsensExquisiteBakingEquipmentDataGenerator"
+		],
+		"client": [
+			"net.nilsen.nilsensbaking.NilsensExquisiteBakingEquipmentClient"
+		]
+	},
+	"mixins": [
+		"nilsensbaking.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.5",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
